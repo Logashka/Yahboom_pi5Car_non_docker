@@ -1,0 +1,24 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# system
+*.o
+*.so
+core
+
+# python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# большие файлы / модели
+*.dat
+*.bag
+*.zip
+*.xz
+*.img

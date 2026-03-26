@@ -1,0 +1,28 @@
+slam_toolbox:
+  ros__parameters:
+    mode: localization
+    map_file_name: "/home/pi/ros2_ws/maps/office_map"
+
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+
+    scan_topic: /scan
+    odom_topic: /odometry/filtered
+
+    resolution: 0.05
+    transform_publish_period: 0.05
+    transform_timeout: 0.3
+    stack_size_to_use: 40000000
+
+    enable_interactive_mode: false
+    use_scan_matching: true
+    throttle_scans: 2
+
+    minimum_travel_distance: 0.20
+    minimum_travel_heading: 0.20
+    minimum_time_interval: 0.20
+
+    max_laser_range: 8.0
+    solver_plugin: solver_plugins::CeresSolver
+    use_sim_time: false
